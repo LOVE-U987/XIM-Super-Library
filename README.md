@@ -1,4 +1,4 @@
-# 🚩XIM Super Library  | XIM超级图书馆
+# 🚩XIM Super Library | XIM超级图书馆
 
 ## 🎉欢迎来到XIM超级图书馆🎉
 
