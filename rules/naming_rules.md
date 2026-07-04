@@ -3,9 +3,11 @@
 ## 1. 文件命名
 
 ### 1.1 Skill文件
+- **必须使用.md扩展名**
 - 采用小写字母和连字符组合
 - 使用描述性的名称
-- 示例: `neoforge-1.21.1-api.md`
+- 命名格式: `技术栈-版本号-功能描述.md`
+- 示例: `neoforge-1.21.1-dimension-api.md`, `fabric-1.21.1-item-modification.md`
 
 ### 1.2 目录命名
 - 采用小写字母和连字符组合
