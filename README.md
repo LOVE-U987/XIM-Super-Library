@@ -77,6 +77,35 @@ skill/
 | [git-commit](tools/git-commit/SKILL.md) | Git提交 |
 | [algorithmic-art](tools/algorithmic-art/SKILL.md) | 算法艺术 |
 
+### 🧠 通用性Skill
+
+**xim-universal-skill** 是XIM超级图书馆的核心入口，用于指导AI助手理解用户需求并自动到图书馆获取资源。
+
+**功能**:
+- 🤖 理解用户的开发需求（环境需求、Skill需求）
+- ❓ 主动询问用户以获取足够的信息
+- 🔍 到XIM图书馆查找匹配的资源
+- 📤 为用户提供下载链接或部署方案
+
+**工作流程**:
+```
+用户提出需求 → AI分析需求 → 获取缺失信息 → 查找XIM图书馆 → 返回结果
+```
+
+**示例对话**:
+```
+用户: 我要配置一个1.20.1 Forge环境
+AI:   ✅ 找到您需要的开发环境！
+      
+      📦 Forge 1.20.1
+      ⬇️ 下载链接: https://xxx
+      
+      💡 推荐配合以下Skill使用：
+      - kubejs-forge-1.20.1 - KubeJS开发
+```
+
+**文档**: [universal_skill.md](rules/universal_skill.md)
+
 ### 🎯 贡献指南
 
 - 确保您的skill满足通用性规则
@@ -89,8 +118,9 @@ skill/
 
 ### 📊 统计信息
 
-- **总Skill数**: 30个
+- **总Skill数**: 31个（含通用性Skill）
 - **Minecraft类别**: 12个
 - **Web类别**: 8个
 - **Tools类别**: 10个
-- **更新时间**: 2026-07-04
+- **通用性Skill**: 1个
+- **更新时间**: 2026-07-05
