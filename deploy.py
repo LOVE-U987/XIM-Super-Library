@@ -207,7 +207,7 @@ def deploy_skills(categories, deploy_path):
         print(f"\n   📂 {cat_info['name']}")
         
         for skill_name in cat_info["skills"]:
-            src_path = TRAe_SKILLS_DIR / skill_name
+            src_path = SKILLS_DIR / category / skill_name
             dest_path = skill_deploy_path / category / skill_name
             
             if not src_path.exists():
