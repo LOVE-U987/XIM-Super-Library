@@ -283,10 +283,112 @@ AI:   ✅ 找到NeoForge 1.21.1环境包！
 - **更新时间**: 2026-07-05
 - **GitHub仓库**: https://github.com/LOVE-U987/XIM-Super-Library
 
+## ⚡ 优化下载策略
+
+### 8.1 问题说明
+
+国内用户直接访问 `raw.githubusercontent.com` 下载环境包（几十MB的.7z文件）会遇到**下载极慢、容易断连**的问题。
+为此，XIM超级图书馆提供了**三级加速方案**，AI应当根据用户环境自动选择最优方式。
+
+### 8.2 方案一：ghproxy国内镜像（中国境内首选）
+
+`ghproxy.com` 是一个GitHub加速代理服务，可以**5-10倍**提升下载速度。
+
+**加速前**（速度极慢）:
+```
+https://raw.githubusercontent.com/LOVE-U987/XIM-Super-Library/Forge/Forge-1.20.1-47.4.10.7z
+```
+
+**加速后**（速度飞起）:
+```
+https://ghproxy.com/https://raw.githubusercontent.com/LOVE-U987/XIM-Super-Library/Forge/Forge-1.20.1-47.4.10.7z
+```
+
+**AI使用规则**:
+- 如果检测到用户在中国境内 → 优先使用 `ghproxy.com` 镜像
+- 如果ghproxy不可用 → 降级到原始URL
+
+**镜像URL格式**:
+```
+原始:     https://raw.githubusercontent.com/{repo}/{branch}/{file}
+ghproxy: https://ghproxy.com/https://raw.githubusercontent.com/{repo}/{branch}/{file}
+```
+
+### 8.3 方案二：git clone深度克隆（最稳定、支持断点续传）
+
+使用 `git clone` 代替原始文件下载，利用git协议的高效压缩和传输能力：
+
+**命令示例**:
+```bash
+# 只克隆指定分支的最新一次提交（几十KB数据，秒级完成）
+git clone --depth 1 --single-branch -b Forge https://github.com/LOVE-U987/XIM-Super-Library.git forge-env
+
+# 配合ghproxy使用（中国境内极速）
+git clone --depth 1 --single-branch -b Forge https://ghproxy.com/https://github.com/LOVE-U987/XIM-Super-Library.git forge-env
+```
+
+**优势**:
+- ✅ git协议比HTTP下载快2-3倍
+- ✅ `--depth 1` 只下载最新版本，体积最小
+- ✅ 支持断点续传，不怕断网
+- ✅ 配合ghproxy更快
+
+### 8.4 方案三：aria2多线程下载（极致速度）
+
+如果用户安装了 `aria2c`，可以使用多线程（16线程）下载，速度拉满：
+
+```bash
+# 16线程并发下载，速度拉满
+aria2c -x 16 -s 16 -k 1M https://ghproxy.com/https://raw.githubusercontent.com/LOVE-U987/XIM-Super-Library/Forge/Forge-1.20.1-47.4.10.7z
+
+# 或使用原始地址
+aria2c -x 16 -s 16 -k 1M https://raw.githubusercontent.com/LOVE-U987/XIM-Super-Library/Forge/Forge-1.20.1-47.4.10.7z
+```
+
+**让AI帮用户安装aria2c**:
+```powershell
+# Windows
+winget install aria2
+```
+
+### 8.5 方案选择优先级
+
+```
+┌─ 检测用户所在地 ──────────────────────────────────┐
+│                                                    │
+│  中国境内  ──→  ghproxy + git clone (推荐)         │
+│              └─→  ghproxy + aria2 (追求极致速度)    │
+│              └─→  ghproxy + Python下载 (保底)       │
+│                                                    │
+│  中国境外  ──→  git clone (推荐)                    │
+│              └─→  aria2 (追求极致速度)              │
+│              └─→  raw GitHub (保底)                │
+└────────────────────────────────────────────────────┘
+```
+
+### 8.6 AI推荐话术
+
+**示例1：用户在中国境内**:
+```
+用户: 我需要1.20.1 Forge环境
+AI:   ✅ 找到Forge 1.20.1环境包！
+      
+      检测到您在中国境内，为您推荐加速方案：
+      
+      🚀 方案一（推荐）：一键命令克隆（秒级搞定）
+      git clone --depth 1 --single-branch -b Forge https://ghproxy.com/https://github.com/LOVE-U987/XIM-Super-Library.git forge-env
+      
+      🚀 方案二：aria2多线程下载（速度拉满）
+      aria2c -x 16 -s 16 -k 1M https://ghproxy.com/https://raw.githubusercontent.com/LOVE-U987/XIM-Super-Library/Forge/Forge-1.20.1-47.4.10.7z
+      
+      💡 推荐配合以下Skill使用：
+      - kubejs-forge-1.20.1 - KubeJS开发
+```
+
 ## ⚠️ 注意事项
 
 1. **版本匹配**: 确保环境版本与Skill版本匹配
-2. **网络问题**: 如果下载失败，请检查网络连接
+2. **网络问题**: 如果ghproxy镜像不可用，降级到原始GitHub URL
 3. **资源更新**: 图书馆资源会定期更新，建议定期检查新版本
 4. **反馈建议**: 如果找不到需要的资源，请提交Issue反馈
 
