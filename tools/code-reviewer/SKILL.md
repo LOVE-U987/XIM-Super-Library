@@ -1,5 +1,6 @@
 ---
 name: code-reviewer
+tags: [Skills, 重构审查规范, 代码审查]
 description: Use this skill to review code. It supports both local changes (staged or working tree) and remote Pull Requests (by ID or URL). It focuses on correctness, maintainability, and adherence to project standards.
 ---
 

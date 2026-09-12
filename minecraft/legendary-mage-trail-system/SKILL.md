@@ -1,5 +1,6 @@
 ---
-name: "legendarymage-trail-system"
+name: "legendary-mage-trail-system"
+tags: [我的世界开发, 特定模组开发, 图形化UI布局, 渲染]
 description: "提供Legendary-Mage模组中拖尾特效系统的使用指南。Invoke when user asks how to use the trail effect system, add trails to spells/projectiles, or customize trail effects."
 ---
 
@@ -7,16 +8,16 @@ description: "提供Legendary-Mage模组中拖尾特效系统的使用指南。I
 
 ## 概述
 
-本系统为Legendary-Mage模组提供了一个**几何渲染**的拖尾特效系统，不使用粒子效果，而是使用三角形带（Triangle Strip）渲染技术，实现流畅、立体、发光的拖尾效果。
+本系统为Legendary-Mage模组提供**几何渲染**的拖尾特效系统，不使用粒子效果，而是使用三角形带（Triangle Strip）渲染技术。
 
 ## 核心特性
 
-- ✅ **几何渲染** - 使用OpenGL三角形渲染，非粒子效果
-- ✅ **发光效果** - 支持发光（Glowing）和发光强度调节
-- ✅ **年龄渐变** - 拖尾点随时间淡出
-- ✅ **元素集成** - 与元素系统（火、冰、雷等）深度集成
-- ✅ **独立渲染** - 每个拖尾独立渲染，不会相互连接
-- ✅ **Billboard技术** - 拖尾始终面向相机，无自旋转问题
+- **几何渲染** - 使用OpenGL三角形渲染，非粒子效果
+- **发光效果** - 支持发光（Glowing）和发光强度调节
+- **年龄渐变** - 拖尾点随时间淡出
+- **元素集成** - 与元素系统（火、冰、雷等）深度集成
+- **独立渲染** - 每个拖尾独立渲染，不会相互连接
+- **Billboard技术** - 拖尾始终面向相机，无自旋转问题
 
 ## 系统架构
 
@@ -252,7 +253,7 @@ int color = 0xAARRGGBB;
    - `updateInterval` 控制更新频率，建议 1-2
    - 避免创建过多拖尾（>50个同时活跃）
 
-### 🔧 调试
+### 调试
 
 启用调试输出查看拖尾状态：
 

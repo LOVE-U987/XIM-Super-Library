@@ -1,5 +1,6 @@
 ---
 name: frontend-skill
+tags: [网页开发, UI与动画, 前端]
 description: Use when the task asks for a visually strong landing page, website, app, prototype, demo, or game UI. This skill enforces restrained composition, image-led hierarchy, cohesive content structure, and tasteful motion while avoiding generic cards, weak branding, and UI clutter.
 ---
 

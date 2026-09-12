@@ -1,5 +1,6 @@
 ---
-name: "mc-config-ui"
+name: "neoforge-1.21.1-config-ui"
+tags: [我的世界开发, UI与动画, 图形化UI布局, 配置界面]
 description: "Minecraft 模组配置界面开发指南，包含 Modern UI（GPU 加速）和原生 Screen 两套方案。Invoke when developing config screens, settings UI, or any in-game GUI for Minecraft mods on NeoForge 1.21.1."
 ---
 

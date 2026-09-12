@@ -34,14 +34,14 @@ SKILL_CATEGORIES = {
         "skills": [
             "neoforge-item-modify-workflow",
             "attribute-modify",
-            "legendarymage-trail-system",
-            "irons-spells-neoforge-1-21-1",
-            "tacz-recipe",
+            "legendary-mage-trail-system",
+            "irons-spells-neoforge-1.21.1",
+            "tacz-recipe-1.20.1",
             "neoforge-1.21.1-config-screen",
             "kubejs-neoforge-1.21.1",
             "kubejs-forge-1.20.1",
             "pasterdream-dimension-api",
-            "mc-config-ui",
+            "neoforge-1.21.1-config-ui",
             "modern-ui",
             "api-split-multi-module"
         ]

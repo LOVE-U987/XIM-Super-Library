@@ -1,5 +1,6 @@
 ---
 name: "attribute-modify"
+tags: [我的世界开发, 特定模组开发, neoforge, 1.21.1, 物品属性]
 description: "提供NeoForge 1.21.1环境下通过Attribute Modify模组修改物品属性的完整API参考。Invoke when user needs to modify item attributes, create data-driven attribute modifiers, or replace default item properties via datapack-style configuration."
 ---
 
@@ -7,7 +8,7 @@ description: "提供NeoForge 1.21.1环境下通过Attribute Modify模组修改�
 
 ## 功能描述
 
-本技能提供在 **NeoForge 1.21.1** 环境下，通过 **Attribute Modify** 模组（或类似数据驱动属性修改方案）修改物品默认属性的完整开发规范。
+在 **NeoForge 1.21.1** 环境下，通过 **Attribute Modify** 模组（或类似数据驱动属性修改方案）修改物品默认属性。
 
 主要功能包括：
 - 修改物品的攻击力、攻击速度、护甲值等基础属性
@@ -389,8 +390,8 @@ function logItemAttributes(item) {
 ## 相关技能
 
 - [kubejs-neoforge-1.21.1](kubejs-neoforge-1.21.1/SKILL.md) - KubeJS 基础开发技能
-- [irons-spells-neoforge-1-21-1](irons-spells-neoforge-1-21-1/SKILL.md) - Iron's Spells 法术开发
-- [legendarymage-trail-system](legendarymage-trail-system/SKILL.md) - 拖尾特效系统
+- [irons-spells-neoforge-1.21.1](irons-spells-neoforge-1.21.1/SKILL.md) - Iron's Spells 法术开发
+- [legendary-mage-trail-system](legendary-mage-trail-system/SKILL.md) - 拖尾特效系统
 
 ---
 

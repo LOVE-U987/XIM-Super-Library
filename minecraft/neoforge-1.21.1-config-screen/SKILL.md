@@ -1,5 +1,6 @@
 ---
 name: neoforge-1.21.1-config-screen
+tags: [我的世界开发, 图形化UI布局, neoforge, 1.21.1, 配置界面]
 description: 提供NeoForge 1.21.1配置界面开发的完整指南和常见问题解决方案。Invoke when developing config GUI screens for NeoForge 1.21.1 mods, especially when encountering rendering issues, blur problems, or scroll layout challenges.
 ---
 
@@ -7,7 +8,7 @@ description: 提供NeoForge 1.21.1配置界面开发的完整指南和常见问�
 
 ## 概述
 
-本 Skill 记录 NeoForge 1.21.1 环境下开发 Minecraft 模组配置界面的完整经验，包括：
+本 Skill 记录 NeoForge 1.21.1 环境下开发 Minecraft 模组配置界面的经验，包括：
 - 基础配置界面架构
 - 常见问题及解决方案
 - 渲染优化技巧
@@ -497,6 +498,5 @@ public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partia
 
 ## 参考实现
 
-完整的配置界面实现可以参考：
 - Epic Fight 模组的 `TPSSettingScreen.java`
 - 本项目的 `AdaptiveNemesisConfigScreen.java`

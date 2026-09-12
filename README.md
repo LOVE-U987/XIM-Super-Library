@@ -1,126 +1,101 @@
-# 🚩 XIM Super Library | XIM超级图书馆 - Skill分支
+# XIM Super Library | XIM超级图书馆 - Skill分支
 
-## 🎉 欢迎来到XIM超级图书馆Skill分支 🎉
+## 简介
 
-### 🧠 什么是Skill
+XIM超级图书馆的 AI 能力扩展模块库。Skill 是帮助 AI 在开发过程中获取相关帮助信息的模块，AI 可通过通用性 Skill 在图书馆中检索资源。
 
-Skill是XIM超级图书馆的AI能力扩展模块，用于帮助AI在开发过程中获取相关的帮助信息。
-
-### 📚 如何使用
-
-AI可以通过通用性skill来收集相应的信息，在XIM图书馆里获取帮助。
-
-### 📂 目录结构
+## 目录结构
 
 ```
 skill/
-├── minecraft/                # Minecraft模组开发
-│   ├── neoforge/             # NeoForge相关Skill
-│   ├── forge/                # Forge相关Skill
-│   └── fabric/               # Fabric相关Skill
-├── web/                      # Web开发
-│   ├── frontend/             # 前端开发Skill
-│   └── backend/              # 后端开发Skill
-├── tools/                    # 工具使用
-│   ├── devops/               # DevOps工具
-│   └── utilities/            # 实用工具
-├── rules/                    # 规则文档
-│   ├── general_rules.md      # 通用性规则
-│   ├── naming_rules.md       # 命名规则
-│   └── placement_rules.md    # 摆放规则
-├── examples/                 # 示例Skill
-│   └── sample-skill.md       # 示例Skill文件
-└── README.md                 # 本文件
+├── minecraft/      # Minecraft模组开发
+├── web/            # Web开发
+├── tools/          # 工具使用
+├── rules/          # 规则文档
+├── examples/       # 示例Skill
+└── README.md       # 本文件
 ```
 
-### 📦 Skill分类
+## 标签体系
 
-#### 🏗️ Minecraft模组开发
-| Skill | 说明 |
-|-------|------|
-| [neoforge-item-modify-workflow](minecraft/neoforge-item-modify-workflow/SKILL.md) | NeoForge物品属性修改工作流 |
-| [attribute-modify](minecraft/attribute-modify/SKILL.md) | 属性修改API参考 |
-| [legendarymage-trail-system](minecraft/legendarymage-trail-system/SKILL.md) | 拖尾特效系统 |
-| [irons-spells-neoforge-1-21-1](minecraft/irons-spells-neoforge-1-21-1/SKILL.md) | Iron's Spells法术开发 |
-| [tacz-recipe](minecraft/tacz-recipe/SKILL.md) | TaCZ配方转换 |
-| [neoforge-1.21.1-config-screen](minecraft/neoforge-1.21.1-config-screen/SKILL.md) | 配置界面开发 |
-| [kubejs-neoforge-1.21.1](minecraft/kubejs-neoforge-1.21.1/SKILL.md) | KubeJS NeoForge开发 |
-| [kubejs-forge-1.20.1](minecraft/kubejs-forge-1.20.1/SKILL.md) | KubeJS Forge开发 |
-| [pasterdream-dimension-api](minecraft/pasterdream-dimension-api/SKILL.md) | 维度注册API |
-| [mc-config-ui](minecraft/mc-config-ui/SKILL.md) | 配置界面开发指南 |
-| [modern-ui](minecraft/modern-ui/SKILL.md) | Modern UI框架 |
-| [api-split-multi-module](minecraft/api-split-multi-module/SKILL.md) | 多模块架构 |
+标签是知识库资源定位的核心依据，完整定义见 [提交规则](rules/commit_rules.md)。主标签：
 
-#### 🌐 Web开发
-| Skill | 说明 |
-|-------|------|
-| [frontend-design](web/frontend-design/SKILL.md) | 前端界面设计 |
-| [frontend-skill](web/frontend-skill/SKILL.md) | 前端开发技能 |
-| [shadcn](web/shadcn/SKILL.md) | shadcn组件库 |
-| [gsap](web/gsap/SKILL.md) | GSAP动画库 |
-| [animejs](web/animejs/SKILL.md) | Anime.js动画 |
-| [interaction-design](web/interaction-design/SKILL.md) | 交互设计 |
-| [theme-factory](web/theme-factory/SKILL.md) | 主题工厂 |
-| [web-design-guidelines](web/web-design-guidelines/SKILL.md) | Web设计指南 |
+我的世界开发 · 网页开发 · UI与动画 · 项目结构规范 · 重构审查规范 · 逻辑规范 · 代码质量规范 · 个人规则 · 项目规则 · 特定模组开发 · 图形化UI布局 · Skills
 
-#### 🛠️ 工具使用
-| Skill | 说明 |
-|-------|------|
-| [redis-development](tools/redis-development/SKILL.md) | Redis开发 |
-| [agent-browser](tools/agent-browser/SKILL.md) | 浏览器自动化 |
-| [webapp-testing](tools/webapp-testing/SKILL.md) | Web应用测试 |
-| [screenshot](tools/screenshot/SKILL.md) | 截图工具 |
-| [writing-plans](tools/writing-plans/SKILL.md) | 写作计划 |
-| [brainstorming](tools/brainstorming/SKILL.md) | 头脑风暴 |
-| [code-reviewer](tools/code-reviewer/SKILL.md) | 代码审查 |
-| [gh-cli](tools/gh-cli/SKILL.md) | GitHub CLI |
-| [git-commit](tools/git-commit/SKILL.md) | Git提交 |
-| [algorithmic-art](tools/algorithmic-art/SKILL.md) | 算法艺术 |
+## Skill 分类
 
-### 🧠 通用性Skill
+### Minecraft 模组开发
 
-**xim-universal-skill** 是XIM超级图书馆的核心入口，用于指导AI助手理解用户需求并自动到图书馆获取资源。
+| Skill | 说明 | 标签 |
+|-------|------|------|
+| [neoforge-item-modify-workflow](minecraft/neoforge-item-modify-workflow/SKILL.md) | NeoForge物品属性修改工作流 | 我的世界开发、特定模组开发 |
+| [attribute-modify](minecraft/attribute-modify/SKILL.md) | 属性修改API参考 | 我的世界开发、特定模组开发 |
+| [legendary-mage-trail-system](minecraft/legendary-mage-trail-system/SKILL.md) | 拖尾特效系统 | 我的世界开发、特定模组开发、图形化UI布局 |
+| [irons-spells-neoforge-1.21.1](minecraft/irons-spells-neoforge-1.21.1/SKILL.md) | Iron's Spells法术开发 | 我的世界开发、特定模组开发 |
+| [tacz-recipe-1.20.1](minecraft/tacz-recipe-1.20.1/SKILL.md) | TaCZ配方转换 | 我的世界开发、特定模组开发 |
+| [neoforge-1.21.1-config-screen](minecraft/neoforge-1.21.1-config-screen/SKILL.md) | 配置界面渲染开发 | 我的世界开发、图形化UI布局 |
+| [kubejs-neoforge-1.21.1](minecraft/kubejs-neoforge-1.21.1/SKILL.md) | KubeJS NeoForge开发 | 我的世界开发 |
+| [kubejs-forge-1.20.1](minecraft/kubejs-forge-1.20.1/SKILL.md) | KubeJS Forge开发 | 我的世界开发 |
+| [pasterdream-dimension-api](minecraft/pasterdream-dimension-api/SKILL.md) | 维度注册API | 我的世界开发、特定模组开发 |
+| [neoforge-1.21.1-config-ui](minecraft/neoforge-1.21.1-config-ui/SKILL.md) | 配置界面双方案指南 | 我的世界开发、UI与动画、图形化UI布局 |
+| [modern-ui](minecraft/modern-ui/SKILL.md) | Modern UI框架 | 我的世界开发、UI与动画、图形化UI布局 |
+| [api-split-multi-module](minecraft/api-split-multi-module/SKILL.md) | 多模块架构 | 我的世界开发、项目结构规范 |
 
-**功能**:
-- 🤖 理解用户的开发需求（环境需求、Skill需求）
-- ❓ 主动询问用户以获取足够的信息
-- 🔍 到XIM图书馆查找匹配的资源
-- 📤 为用户提供下载链接或部署方案
+### Web 开发
 
-**工作流程**:
+| Skill | 说明 | 标签 |
+|-------|------|------|
+| [frontend-design](web/frontend-design/SKILL.md) | 前端界面设计 | 网页开发、UI与动画 |
+| [frontend-skill](web/frontend-skill/SKILL.md) | 前端开发技能 | 网页开发、UI与动画 |
+| [shadcn](web/shadcn/SKILL.md) | shadcn组件库 | 网页开发、UI与动画 |
+| [gsap](web/gsap/SKILL.md) | GSAP动画库 | 网页开发、UI与动画 |
+| [animejs](web/animejs/SKILL.md) | Anime.js动画 | 网页开发、UI与动画 |
+| [interaction-design](web/interaction-design/SKILL.md) | 交互设计 | 网页开发、UI与动画 |
+| [theme-factory](web/theme-factory/SKILL.md) | 主题工厂 | 网页开发、UI与动画 |
+| [web-design-guidelines](web/web-design-guidelines/SKILL.md) | Web设计指南 | 网页开发、UI与动画 |
+
+### 工具使用
+
+| Skill | 说明 | 标签 |
+|-------|------|------|
+| [redis-development](tools/redis-development/SKILL.md) | Redis开发 | Skills |
+| [agent-browser](tools/agent-browser/SKILL.md) | 浏览器自动化 | Skills |
+| [webapp-testing](tools/webapp-testing/SKILL.md) | Web应用测试 | Skills、网页开发 |
+| [screenshot](tools/screenshot/SKILL.md) | 截图工具 | Skills |
+| [writing-plans](tools/writing-plans/SKILL.md) | 写作计划 | Skills、项目结构规范 |
+| [brainstorming](tools/brainstorming/SKILL.md) | 头脑风暴 | Skills |
+| [code-reviewer](tools/code-reviewer/SKILL.md) | 代码审查 | Skills、重构审查规范 |
+| [gh-cli](tools/gh-cli/SKILL.md) | GitHub CLI | Skills |
+| [git-commit](tools/git-commit/SKILL.md) | Git提交 | Skills、项目规则 |
+| [algorithmic-art](tools/algorithmic-art/SKILL.md) | 算法艺术 | 网页开发、UI与动画 |
+
+## 规则文档
+
+| 文件 | 说明 | 标签 |
+|------|------|------|
+| [通用性规则](rules/general_rules.md) | Skill编写质量标准 | Skills、代码质量规范 |
+| [命名规则](rules/naming_rules.md) | 资源命名规范 | Skills、项目结构规范 |
+| [摆放规则](rules/placement_rules.md) | 目录组织规范 | Skills、项目结构规范 |
+| [提交规则](rules/commit_rules.md) | 提交规范与标签体系 | Skills、项目规则、代码质量规范 |
+| [通用性Skill](rules/universal_skill.md) | AI资源检索入口 | Skills |
+
+## 通用性 Skill
+
+**xim-universal-skill** 是 XIM超级图书馆的核心入口，指导 AI 理解用户需求并自动检索图书馆资源。功能：分析需求、追问缺失信息、匹配资源、返回下载链接或部署方案。工作流程：
+
 ```
 用户提出需求 → AI分析需求 → 获取缺失信息 → 查找XIM图书馆 → 返回结果
 ```
 
-**示例对话**:
-```
-用户: 我要配置一个1.20.1 Forge环境
-AI:   ✅ 找到您需要的开发环境！
-      
-      📦 Forge 1.20.1
-      ⬇️ 下载链接: https://xxx
-      
-      💡 推荐配合以下Skill使用：
-      - kubejs-forge-1.20.1 - KubeJS开发
-```
+## 贡献指南
 
-**文档**: [universal_skill.md](rules/universal_skill.md)
+- Skill 满足通用性规则、命名规则与摆放规则
+- frontmatter 包含 1-3 个主标签
+- 新增或变更资源后同步本 README 与分类 README
+- 提交信息遵循 [提交规则](rules/commit_rules.md)
 
-### 🎯 贡献指南
+## 统计信息
 
-- 确保您的skill满足通用性规则
-- 满足命名规则与摆放规则
-- 提交PR前请确保测试通过
-
----
-
-**🚀 开始贡献您的Skill，让AI更加强大！**
-
-### 📊 统计信息
-
-- **总Skill数**: 31个（含通用性Skill）
-- **Minecraft类别**: 12个
-- **Web类别**: 8个
-- **Tools类别**: 10个
-- **通用性Skill**: 1个
-- **更新时间**: 2026-07-05
+- 总 Skill 数：31 个（Minecraft 12、Web 8、Tools 10、通用 1）
+- 规则文档：5 篇
+- 更新时间：2026-09-12

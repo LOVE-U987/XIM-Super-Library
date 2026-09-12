@@ -1,5 +1,6 @@
 ---
-name: irons-spells-neoforge-1-21-1
+name: irons-spells-neoforge-1.21.1
+tags: [我的世界开发, 特定模组开发, neoforge, 1.21.1, 法术开发]
 description: "提供Iron's Spells 'n Spellbooks模组在NeoForge 1.21.1环境下的法术开发API参考。Invoke when developing custom spells for Iron's Spells mod on NeoForge 1.21.1 在开发时请确定开发环境是否合适！"
 ---
 

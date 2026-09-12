@@ -1,15 +1,16 @@
 ---
 name: modern-ui
+tags: [我的世界开发, UI与动画, 图形化UI布局, 1.21.1, 渲染]
 description: 提供 Modern UI (ModernUI-MC) 在 NeoForge 1.21.1 环境下开发 GPU 加速、高视觉效果 UI 的完整 API 参考和代码指南。Invoke when developing Minecraft mod UI using Modern UI framework on NeoForge 1.21.1, including Fragment-based screens, animations, Material Design components, and advanced visual effects.
 ---
 
 # Modern UI - NeoForge 1.21.1 现代化 UI 开发指南
 
-## 📋 概述
+## 概述
 
 **Modern UI (ModernUI-MC)** 是由 BloCamLimb 开发的跨平台桌面 UI 框架，已深度集成到 Minecraft 渲染管道中。
 
-### ✨ 核心优势
+### 核心优势
 
 | 特性 | 说明 |
 |------|------|
@@ -20,7 +21,7 @@ description: 提供 Modern UI (ModernUI-MC) 在 NeoForge 1.21.1 环境下开发 
 | **Material Design** | 内置 Material 组件库（Button, Switch, Slider, TabLayout 等） |
 | **富文本** | Markflow 扩展支持 Markdown 渲染 |
 
-### 🏗️ 架构层级
+### 架构层级
 
 ```
 Minecraft Screen
@@ -41,7 +42,7 @@ Minecraft Screen
 
 ---
 
-## 🔧 环境配置
+## 环境配置
 
 ### 1. build.gradle 依赖
 
@@ -124,7 +125,7 @@ modernui_core_version=3.12.0
 
 ---
 
-## 🧩 核心概念
+## 核心概念
 
 ### 1. ModernUIApi —— 入口 API
 
@@ -437,7 +438,7 @@ lp.gravity = Gravity.CENTER;  // 或 Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM 
 
 ---
 
-## 📐 布局系统 (Layouts)
+## 布局系统 (Layouts)
 
 ### 1. LinearLayout —— 线性布局
 
@@ -604,7 +605,7 @@ public class ConstraintLayout extends ViewGroup {
 
 ---
 
-## 🎨 控件库 (Widgets)
+## 控件库 (Widgets)
 
 ### 1. TextView —— 文本显示
 
@@ -925,7 +926,7 @@ public class ViewPager extends ViewGroup {
 
 ---
 
-## 🎯 高级视觉效果
+## 高级视觉效果
 
 ### 1. Canvas —— 自定义绘制
 
@@ -1201,7 +1202,7 @@ Minecraft.getInstance().setScreen(
 
 ---
 
-## 🎬 动画系统
+## 动画系统
 
 ### 1. ValueAnimator —— 值动画
 
@@ -1400,7 +1401,7 @@ view.animate()
 
 ---
 
-## 🏆 Material Design 组件
+## Material Design 组件
 
 Modern UI 内置了 Material Design 3 风格的组件库，直接可用。
 
@@ -1455,7 +1456,7 @@ public class MaterialCardView extends FrameLayout {
 
 ---
 
-## 🖐️ 事件处理
+## 事件处理
 
 ### 1. 点击事件
 
@@ -1639,7 +1640,7 @@ seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
 ---
 
-## 💡 完整示例
+## 完整示例
 
 ### 示例 1：简单的配置界面 Fragment
 
@@ -1979,7 +1980,7 @@ public static void onClientTick(ClientTickEvent.Post event) {
 
 ---
 
-## ⚡ 常见模式和最佳实践
+## 常见模式和最佳实践
 
 ### 1. Fragment 与 Screen 的选择
 
@@ -2101,7 +2102,7 @@ public class MyFragment extends Fragment {
 
 ---
 
-## 📚 参考资源
+## 参考资源
 
 - **GitHub**: https://github.com/BloCamLimb/ModernUI-MC
 - **Javadoc**: https://blocamlimb.github.io/ModernUI-MC/

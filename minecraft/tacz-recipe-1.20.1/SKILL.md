@@ -1,5 +1,6 @@
 ---
 name: tacz-recipe-1.20.1
+tags: [我的世界开发, 特定模组开发, forge, 1.20.1, 配方转换]
 description: 该Skill的环境是1.20.1 Forge，kubejs版本为1.6.5，需tacz的任意版本，如需要调用该方法，请查看有关的环境，否则可能报错  Converts JSON recipe data to KubeJS TaCZ recipe code. Invoke when user provides a JSON file with recipe data and asks to convert it to KubeJS format.
 ---
 

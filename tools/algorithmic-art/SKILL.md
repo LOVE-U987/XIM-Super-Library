@@ -1,5 +1,6 @@
 ---
 name: algorithmic-art
+tags: [网页开发, UI与动画, 算法艺术]
 description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
 license: Complete terms in LICENSE.txt
 ---
@@ -72,8 +73,6 @@ Algorithmic expression: Vector fields constructed from mathematical functions or
 **"Stochastic Crystallization"**
 Philosophy: Random processes crystallizing into ordered structures.
 Algorithmic expression: Randomized circle packing or Voronoi tessellation. Start with random points, let them evolve through relaxation algorithms. Cells push apart until equilibrium. Color based on cell size, neighbor count, or distance from center. The organic tiling that emerges feels both random and inevitable. Every seed produces unique crystalline beauty - the mark of a master-level generative algorithm.
-
-*These are condensed examples. The actual algorithmic philosophy should be 4-6 substantial paragraphs.*
 
 ### ESSENTIAL PRINCIPLES
 - **ALGORITHMIC PHILOSOPHY**: Creating a computational worldview to be expressed through code

@@ -1,5 +1,6 @@
 ---
 name: animejs
+tags: [网页开发, UI与动画, 动画]
 description: 提供 Anime.js v4 动画库的代码辅助，包含动画创建、时间轴、缓动函数、拖拽、滚动监听等功能。Invoke when user is writing animation code with Anime.js or needs help with web animations.
 ---
 

@@ -1,6 +1,12 @@
+---
+name: sample-skill
+description: 展示 Skill 的基本结构和格式，供新 Skill 编写参考。
+tags: [Skills, 项目结构规范]
+---
+
 # Sample Skill | 示例Skill
 
-## 📋 元信息
+## 元信息
 
 - **名称**: sample-skill
 - **版本**: 1.0.0
@@ -8,16 +14,16 @@
 - **创建日期**: 2026-07-04
 - **更新日期**: 2026-07-04
 - **分类**: tools
-- **标签**: example, template, skill
+- **标签**: [Skills, 项目结构规范]
 - **兼容AI**: trae, chatgpt, claude
 
-## 📝 简介
+## 简介
 
-这是一个示例Skill，用于展示Skill的基本结构和格式。Skill是XIM超级图书馆的AI能力扩展模块，用于帮助AI在开发过程中获取相关的帮助信息。
+示例 Skill，展示 Skill 的基本结构和格式。Skill 是 XIM 超级图书馆的 AI 能力扩展模块，帮助 AI 在开发过程中获取相关信息。
 
-## 🎯 使用方法
+## 使用方法
 
-AI可以通过通用性skill来收集相应的信息，在XIM图书馆里获取帮助。
+AI 可通过通用性 Skill 收集信息，在 XIM 图书馆获取帮助。
 
 ### 调用方式
 
@@ -32,7 +38,7 @@ AI可以通过通用性skill来收集相应的信息，在XIM图书馆里获取�
 | query | string | 是 | 查询内容 |
 | version | string | 否 | 版本号 |
 
-## 💻 示例代码
+## 示例代码
 
 ```java
 public class Example {
@@ -42,14 +48,15 @@ public class Example {
 }
 ```
 
-## 📚 相关资源
+## 相关资源
 
 - [XIM超级图书馆](https://github.com/LOVE-U987/XIM-Super-Library)
 - [通用性规则](../rules/general_rules.md)
 - [命名规则](../rules/naming_rules.md)
 - [摆放规则](../rules/placement_rules.md)
+- [提交规则](../rules/commit_rules.md)
 
-## ⚠️ 注意事项
+## 注意事项
 
-- 本Skill仅作为示例，不包含实际功能
-- 使用前请确保已阅读并理解相关规则文档
+- 本 Skill 仅作为示例，不包含实际功能
+- 使用前请先阅读并理解相关规则文档

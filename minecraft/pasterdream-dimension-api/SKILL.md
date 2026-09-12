@@ -1,5 +1,6 @@
 ---
 name: "pasterdream-dimension-api"
+tags: [我的世界开发, 特定模组开发, 1.21.1, 维度注册]
 description: "PasterDream 模组维度注册专用 API，提供 Facade+Builder 模式一键注册自定义维度。在需要创建新维度、配置维度类型/生物群系/背景音乐或生成维度 JSON 时调用。"
 ---
 

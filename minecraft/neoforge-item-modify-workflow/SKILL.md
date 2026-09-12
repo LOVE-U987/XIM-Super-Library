@@ -1,5 +1,6 @@
 ---
 name: "neoforge-item-modify-workflow"
+tags: [我的世界开发, 特定模组开发, neoforge, 1.21.1, 物品属性]
 description: "提供NeoForge 1.21.1环境下修改物品属性的完整工作流参考，包括NeoAttributeModify数据包配置和KubeJS事件监听方案。Invoke when user needs to modify item attributes, item_name, lore, or rarity in NeoForge 1.21.1 environment."
 ---
 
@@ -7,7 +8,7 @@ description: "提供NeoForge 1.21.1环境下修改物品属性的完整工作流
 
 ## 概述
 
-本技能记录在 **NeoForge 1.21.1** 环境下，通过 **NeoAttributeModify** 模组和 **KubeJS** 修改物品属性的完整工作流。
+在 **NeoForge 1.21.1** 环境下，通过 **NeoAttributeModify** 模组和 **KubeJS** 修改物品属性的完整工作流。
 
 ## 环境信息
 
@@ -356,4 +357,4 @@ function logItemAttributes(item) {
 
 - [attribute-modify](../attribute-modify/SKILL.md) - 属性修改详细API
 - [kubejs-neoforge-1.21.1](../kubejs-neoforge-1.21.1/SKILL.md) - KubeJS 基础开发
-- [irons-spells-neoforge-1-21-1](../irons-spells-neoforge-1-21-1/SKILL.md) - Iron's Spells 法术开发
+- [irons-spells-neoforge-1.21.1](../irons-spells-neoforge-1.21.1/SKILL.md) - Iron's Spells 法术开发

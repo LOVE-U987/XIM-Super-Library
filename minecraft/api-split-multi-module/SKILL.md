@@ -1,5 +1,6 @@
 ---
 name: "api-split-multi-module"
+tags: [我的世界开发, 项目结构规范, 多模块]
 description: "Guides API-Split multi-module architecture decisions for NeoPasterDream (NeoForge 1.21.1). Invoke when deciding where to place new code (PasterDreamAPI vs PasterDream), creating Builder/Facade/Result/Config classes, or designing new registration systems."
 ---
 

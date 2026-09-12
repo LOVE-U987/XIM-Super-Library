@@ -1,5 +1,6 @@
 ---
 name: kubejs-neoforge-1.21.1
+tags: [我的世界开发, neoforge, 1.21.1, kubejs]
 description: "提供KubeJS NeoForge 1.21.1环境下的代码辅助，包含动态难度系统、自定义物品、配方、战利品表、玩家自定义倍数系统等功能。Invoke when user is writing KubeJS scripts for NeoForge 1.21.1 with EntityJS, Iron's Spells, LootJS addons."
 ---
 

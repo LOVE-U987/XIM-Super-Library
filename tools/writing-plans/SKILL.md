@@ -1,5 +1,6 @@
 ---
 name: writing-plans
+tags: [Skills, 项目结构规范, 计划]
 description: Use when you have a spec or requirements for a multi-step task, before touching code
 ---
 

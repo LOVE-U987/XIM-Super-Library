@@ -1,5 +1,6 @@
 ---
 name: interaction-design
+tags: [网页开发, UI与动画, 交互设计]
 description: Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: kubejs-forge-1.20.1
+tags: [我的世界开发, forge, 1.20.1, kubejs]
 description: 提供KubeJS Forge 1.20.1环境下的代码辅助，包含玩家属性修改、事件处理、命令注册、配方修改等功能。Invoke when user is writing KubeJS scripts for Forge 1.20.1 with KubeJS 1.6.5.
 ---
 
